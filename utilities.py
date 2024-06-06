@@ -127,7 +127,7 @@ def detect_anomaly(review, model_path='models'):
     return (prediction, category[prediction])
 
 
-def predict_sentiment(review, model_type='rf'):
+def predict_sentiment(review, model_type='rf',model_path='models'):
     score = get_sentiment_score(review=review)
     polarity = get_sentiment_polarity(score)
     category = get_predicted_class(polarity)
