@@ -8,7 +8,7 @@ with st.form('Input_Form'):
     submit = st.form_submit_button('Analyze Review')
 
 if submit:
-    results = predict_sentiment(review, model_type='rf')
+    results = predict_sentiment(review, model_type='rf',model_path='models')
 
     st.write('##')
     st.write('### RESULTS')
